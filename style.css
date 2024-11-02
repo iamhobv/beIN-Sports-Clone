@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --mainColor: #5c2d91;
+  --secColor: #d4d4d4;
+}
+.vercenter {
+  display: flex;
+  align-items: flex-start;
+}
+.firstNavBar,
+.secondNavBar {
+  padding: 15px 100px;
+}
+.firstNavBar {
+  background-color: white;
+}
+.navBBar {
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+}
+.firstNavBar img {
+  height: 35px;
+  margin-right: 70px;
+}
+
+.firstNavBar ul {
+  display: inline;
+  list-style: none;
+  color: var(--mainColor);
+}
+.firstNavBar ul li {
+  display: inline;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.firstNavBar ul li i {
+  font-size: larger;
+  margin-right: 15px;
+}
+.firstNavBar a {
+  text-decoration: none;
+}
+.icons {
+  right: 115px;
+  position: absolute;
+}
+.icons :nth-child(2) i {
+  color: grey;
+}
+.icons :nth-child(2) :hover {
+  color: var(--mainColor);
+}
+/*----------------------------------------------------------------------------*/
+
+.secondNavBar {
+  background-color: var(--mainColor);
+}
+.secondNavBar h6 {
+  display: inline-block;
+  height: 100%;
+}
+.secondNavBar ul {
+  display: inline;
+  list-style: none;
+  color: white;
+}
+.secondNavBar ul li {
+  display: inline;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 22px;
+}
+.secondNavBar a {
+  text-decoration: none;
+  color: var(--secColor);
+}
+.secondNavBar a:hover {
+  color: white;
+  padding: 12px 0px;
+  border-bottom: white 4px solid;
+}
+.fa-sort-down {
+  margin-left: 7px;
+}
+.subscribe {
+  border: var(--secColor) 1px solid;
+  padding: 0px 6px;
+}
+.subscribe a:hover {
+  text-decoration: none;
+  color: white;
+  padding: 0px 0px;
+  border-bottom: transparent 0px solid;
+}
+
+/*----------------------------------------------------------------------*/
+.body {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 50px;
+  gap: 20px;
+}
+.col1 {
+  width: 65%;
+}
+.col2 {
+  width: 35%;
+}
+
+.competition {
+  background-color: white;
+  box-shadow: #dbdbdbc2 0px 0px 7px 2px;
+  padding: 20px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.competition:hover {
+  overflow: overlay;
+  padding-bottom: 5px;
+}
+
+.competition h3 {
+  margin-bottom: 15px;
+}
+
+/**---------------------------------------------------------*/
+.comList {
+  width: max-content;
+  margin-bottom: 15px;
+}
+.comList a {
+  color: black;
+}
+
+.card {
+  box-shadow: #dbdbdbb2 0px 0px 7px 2px;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+  height: fit-content;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: #bbbbbb 0px 0px 7px 2px;
+}
+.card img {
+  height: 35px;
+  margin-right: 10px;
+}
+.cl {
+  filter: brightness(0);
+}
+.card h3 {
+  display: inline;
+}
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+}
+
+/*---------------------------------------------------------*/
+.banner {
+  background-image: url(assets/default_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+.primerBanner {
+  background-image: url(assets/PremierLeaguebanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+.generalBanner {
+  background-image: url(assets/BundesLiga.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+.btn {
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+  text-decoration: none;
+}
+.banner a {
+  text-decoration: none;
+}
+.btn i {
+  margin-left: 5px;
+  font-size: small;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.mainNew {
+  margin-top: 15px;
+  box-shadow: #dbdbdbc2 0px 0px 7px 2px;
+}
+.mainNew:hover {
+  cursor: pointer;
+  box-shadow: #bbbbbb 0px 2px 7px 2px;
+}
+.mainNew img {
+  width: 100%;
+}
+
+.newP {
+  margin: 20px 15px;
+}
+.newP h4 {
+  color: var(--mainColor);
+}
+/*----------------------------------*/
+.videoNews {
+  margin: 25px 15px;
+  height: 160px;
+  border-radius: 5px;
+
+  display: flex;
+  box-shadow: #dbdbdbc2 0px 0px 7px 2px;
+}
+.videoNews:hover {
+  cursor: pointer;
+  box-shadow: #bbbbbb 0px 2px 7px 2px;
+}
+
+.videoNews img {
+  height: 100%;
+  width: 220px;
+  border-radius: 5px;
+}
+.videoNews img:hover {
+  transform: scale(1.01);
+}
+.vidData {
+  margin-top: 25px;
+  margin-left: 17px;
+}
+.league {
+  color: var(--mainColor);
+}
+
+.space {
+  height: 150px;
+}
+
+.uclBanner {
+  background-image: url(assets/cl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+.matchDetails h5 {
+  width: 40%;
+  margin-bottom: 10px;
+  color: var(--mainColor);
+}
+.smallCard {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  padding: 15px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  box-shadow: #dbdbdbc2 0px 0px 7px 2px;
+}
+.smallCard:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.07);
+}
+/**/
+.teamLogo {
+  width: 15%;
+  margin-right: 15px;
+}
+.Teams h5 {
+  display: inline-block;
+  vertical-align: top;
+}
+.matchDetails {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.matchTime {
+  display: flex;
+  flex-direction: column;
+}
+.matchTime p {
+  font-size: small;
+  font-weight: lighter;
+}
+.matchTime b {
+  font-size: small;
+}
+.uclCardBanner {
+  /* padding: 15px; */
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: rgba(128, 128, 128, 0.25) 1px solid; */
+  /* box-shadow: #dbdbdb6e 0px 0px 7px 2px; */
+  margin-bottom: 15px;
+}
+
+.content {
+  padding: 15px;
+  border: rgba(128, 128, 128, 0.25) 1px solid;
+  box-shadow: #dbdbdb6e 0px 0px 7px 2px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.matches,
+.joinUs {
+  padding: 15px;
+  border: rgba(128, 128, 128, 0.25) 1px solid;
+  box-shadow: #dbdbdb6e 0px 0px 7px 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.joinUs {
+  margin-bottom: 15px;
+}
+
+.seeMore .btn,
+.line {
+  display: inline-block;
+}
+.seeMore .btn {
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+}
+
+.line {
+  width: 40%;
+  background-color: grey;
+  height: 1px;
+  /* width: 60px; */
+}
+.seeMore {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.UEFACL {
+  margin-bottom: 15px;
+}
+.joinUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news {
+  display: flex;
+  gap: 100px;
+}
+
+.news h5 {
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+
+.joinUs form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+input[type="email"] {
+  width: 90%;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 2px var(--secColor) solid;
+  background-color: var(--secColor);
+}
+
+input[type="email"]:focus {
+  background-color: white;
+}
+input[type="submit"] {
+  width: 60%;
+  background-color: var(--mainColor);
+  height: 40px;
+  border-radius: 7px;
+  border: 2px solid var(--mainColor);
+  color: white;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+.latVid {
+  height: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.latVid h3,
+.latVid .btn {
+  color: black;
+}
+.vidBar img {
+  width: 104px;
+  height: 104px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.vidBar,
+followBar {
+  display: flex;
+  gap: 30px;
+  margin-left: 20px;
+}
+.vidBar:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: #bbbbbb 0px 2px 7px 2px;
+  transform: scale(1.01);
+}
+.vidTitle {
+  color: var(--mainColor);
+}
+.vidContent {
+  font-weight: lighter;
+  font-size: 14px;
+}
+.see:hover {
+  background-color: transparent;
+}
+.vidHr {
+  margin: 25px 0px;
+}
+
+.followBar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.followBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.followBar:hover {
+  cursor: pointer;
+}
+.folHr {
+  margin: 5px 0px;
+}
+/* ! ******************************************* */
+.footer {
+  margin-top: 20px;
+  background-color: var(--mainColor);
+  display: flex;
+  padding: 45px 70px;
+}
+.support ul {
+  display: inline-block;
+  margin-right: 40px;
+  list-style: none;
+  vertical-align: text-top;
+}
+.support a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+.support a:hover {
+  font-weight: 650;
+}
+.footer h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+.followus {
+  margin: 0px 40px;
+}
+.logo {
+  width: 50%;
+}
+.app {
+  margin-left: 5px;
+  height: 40px;
+  display: inline;
+}
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  color: white;
+}
+.appDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.download a {
+  text-align: end;
+}
+.backTop {
+  color: white;
+  text-decoration: none;
+}
+.backTop:hover {
+  font-weight: bold;
+}
